@@ -4620,7 +4620,7 @@ broadwest.features.forEach(function(marker) {
   // create a DOM element for the marker
   var el = document.createElement('div');
   el.className = 'marker';
-  el.style.backgroundImage = 'url(https://uploads-ssl.webflow.com/5e66dbf1fdb4d21418ab173c/5e718f302092a93a40b233e7_BW_marker.png)';
+  el.style.backgroundImage = 'url(https://uploads-ssl.webflow.com/5e4ebc6e3ba42824e1a2216c/5eb2bec4b9c84322e4dae7bc_BW_marker_star.png)';
   el.style.width = marker.properties.iconSize[0] + 'px';
   el.style.height = marker.properties.iconSize[1] + 'px';
 
