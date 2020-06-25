@@ -27,8 +27,8 @@ var broadwest = {
   //define colors
   var entertainmentColor = '#5A829B';
   var groceryColor = '#2C9971';
-  var hotelsColor = '#F2B761';
-  var residentialColor = '#99682C';
+  var parksColor = '#F2B761';
+  var hosuniColor = '#99682C';
   var foodBevColor = '#87362B';
 
 var entertainment = {
@@ -480,6 +480,76 @@ var entertainment = {
         'description':"<strong>16-Bit Bar + Arcade and Pins Mechanical Co.</strong><p>1102 Grundy St<br>Nashville TN</p>",
         'color': entertainmentColor
         }
+    }, // end location point
+
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.771290, 36.166531]
+        },
+      'properties': {
+        'name': "Nissan Stadium",
+        'description':"<strong>Nissan Stadium</strong><p>1 Titans Way<br>Nashville TN</p>",
+        'color': entertainmentColor
+        }
+    }, // end location point
+
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.771290, 36.159208]
+        },
+      'properties': {
+        'name': "Bridgestone Arena",
+        'description':"<strong>Bridgestone Arena</strong><p>501 Broadway<br>Nashville TN</p>",
+        'color': entertainmentColor
+        }
+    }, // end location point
+
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.767041, 36.131044]
+        },
+      'properties': {
+        'name': "Nashville Soccer Club Stadium",
+        'description':"<strong>Nashville Soccer Club Stadium</strong><p>625 Smith Ave<br>Nashville TN</p>",
+        'color': entertainmentColor
+        }
+    }, // end location point
+
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.784882, 36.172464]
+        },
+      'properties': {
+        'name': "First Tennesee Park",
+        'description':"<strong>First Tennesee Park</strong><p>19 Jr Gilliam Way<br>Nashville TN</p>",
+        'color': entertainmentColor
+        }
+    }, // end location point
+
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.777967, 36.178037]
+        },
+      'properties': {
+        'name': "Top Golf",
+        'description':"<strong>Top Golf</strong><p>500 Cowan St<br>Nashville TN</p>",
+        'color': entertainmentColor
+        }
     } // end location point
   ] // end array
 };
@@ -528,7 +598,7 @@ var grocery = {
         'color': groceryColor
         }
     }, // end location point
-    
+
     // location point
     {
       'type': 'Feature',
@@ -538,14 +608,14 @@ var grocery = {
         },
       'properties': {
         'name': 'Piggly Wiggly',
-        'description': '<strong>Piggly Wiggly</strong><p>2900 West End Ave<br>Nashville, TN 37203</p>',
+        'description': '<strong>Piggly Wiggly</strong><p>2900 West End Ave<br>Nashville, TN</p>',
         'color': groceryColor
         }
     } // end location point
   ] //end array
 };
 
-var hotels = {
+var parks = {
   'type': 'FeatureCollection',
   'features': [
     // location point
@@ -553,12 +623,12 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.795486, 36.152794]
+        'coordinates': [-86.811999, 36.149059]
         },
       'properties': {
-        'name': 'Aloft Nashville',
-        'description': '<strong>Aloft Nashville</strong><p>1719 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Centennial Park',
+        'description': '<strong>Centennial Park</strong><p>2500 West End Ave<br>Nashville TN</p>',
+        'color': parksColor
         }
     }, // end location point
 
@@ -567,12 +637,12 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.796614, 36.153547]
+        'coordinates': [-86.817456, 36.148031]
         },
       'properties': {
-        'name': 'Residence Inn by Marriott',
-        'description': '<strong>Residence Inn by Marriott</strong><p>1801 Hayes<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Centennial Dog Park',
+        'description': '<strong>Centennial Dog Park</strong><p>2500 West End Ave<br>Nashville TN</p>',
+        'color': parksColor
         }
     }, // end location point
 
@@ -581,12 +651,12 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.796255, 36.153147]
+        'coordinates': [-86.776553, 36.165873]
         },
       'properties': {
-        'name': 'Spring Hill Suites',
-        'description': '<strong>Spring Hill Suites</strong><p>1800 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Bicentennial Park',
+        'description': '<strong>Bicentennial Park</strong><p>350 1st Ave N<br>Nashville TN</p>',
+        'color': parksColor
         }
     }, // end location point
 
@@ -595,12 +665,12 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.797082, 36.152905]
+        'coordinates': [-86.778137, 36.166594]
         },
       'properties': {
-        'name': 'Hutton Hotel',
-        'description': '<strong>Hutton Hotel</strong><p>1808 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Nashville Public Square Park',
+        'description': '<strong>Nashville Public Square Park</strong><p>Union St & 3rd Ave N<br>Nashville TN</p>',
+        'color': parksColor
         }
     }, // end location point
 
@@ -609,12 +679,12 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.798837, 36.152803]
+        'coordinates': [-86.772937, 36.160458]
         },
       'properties': {
-        'name': 'Hayes Street Hotel',
-        'description': '<strong>Hayes Street Hotel</strong><p>1909 Hayes<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Riverfront Park',
+        'description': '<strong>Riverfront Park</strong><p>100 1st Ave N<br>Nashville TN</p>',
+        'color': parksColor
         }
     }, // end location point
 
@@ -623,522 +693,18 @@ var hotels = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.797592, 36.151846]
+        'coordinates': [-86.821667, 36.164995]
         },
       'properties': {
-        'name': 'Marriott Courtyard',
-        'description': '<strong>Marriott Courtyard</strong><p>1901 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.798616, 36.151158]
-        },
-      'properties': {
-        'name': 'Hampton Inn',
-        'description': '<strong>Hampton Inn</strong><p>1919 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.802196, 36.150820]
-        },
-      'properties': {
-        'name': 'Loews Vanderbilt',
-        'description': '<strong>Loews Vanderbilt</strong><p>2100 West End Ave<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.798522, 36.148683]
-        },
-      'properties': {
-        'name': 'Kimpton Aertson',
-        'description': '<strong>Kimpton Aertson</strong><p>2021 Broadway<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.795854, 36.151104]
-        },
-      'properties': {
-        'name': 'Embassy Suites',
-        'description': '<strong>Embassy Suites</strong><p>1811 Broadway<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.794777, 36.152186]
-        },
-      'properties': {
-        'name': 'Hilton Garden',
-        'description': '<strong>Hilton Garden</strong><p>1715 Broadway<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.794373, 36.151565]
-        },
-      'properties': {
-        'name': 'Homes2Suites by Hilton',
-        'description': '<strong>Homes2Suites by Hilton</strong><p>1800 Division<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.789103, 36.151348]
-        },
-      'properties': {
-        'name': 'Best Western Music Row',
-        'description': '<strong>Best Western Music Row</strong><p>1407 Division<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.788711, 36.152796]
-        },
-      'properties': {
-        'name': 'Comfort Inn Downtown Nashville-Vanderbilt',
-        'description': '<strong>Comfort Inn Downtown Nashville-Vanderbilt</strong><p>1501 Demonbreun<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.784079, 36.152570]
-        },
-      'properties': {
-        'name': 'Thompson Hotel',
-        'description': '<strong>Thompson Hotel</strong><p>401 11th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.784463, 36.152432]
-        },
-      'properties': {
-        'name': '404 Hotel',
-        'description': '<strong>404 Hotel</strong><p>404 12th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.782744, 36.151076]
-        },
-      'properties': {
-        'name': 'Stay Alfred at The James',
-        'description': '<strong>Stay Alfred at The James</strong><p>1002 Division<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.781588, 36.150392]
-        },
-      'properties': {
-        'name': 'Fairfield Inn & Suites',
-        'description': '<strong>Fairfield Inn & Suites</strong><p>901 Division<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.778740, 36.164049]
-        },
-      'properties': {
-        'name': 'Noelle',
-        'description': '<strong>Noelle</strong><p>200 4th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.778476, 36.163736]
-        },
-      'properties': {
-        'name': 'Courtyard by Marriott',
-        'description': '<strong>Courtyard by Marriott</strong><p>170 4th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.778784, 36.165271]
-        },
-      'properties': {
-        'name': 'Hotel Indigo',
-        'description': '<strong>Hotel Indigo</strong><p>301 Union St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.782609, 36.163720]
-        },
-      'properties': {
-        'name': 'Hermitage Hotel',
-        'description': '<strong>Hermitage Hotel</strong><p>231 6th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.780361, 36.165330]
-        },
-      'properties': {
-        'name': 'Doubletree',
-        'description': '<strong>Doubletree</strong><p>315 4th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.777229, 36.160050]
-        },
-      'properties': {
-        'name': 'Hilton',
-        'description': '<strong>Hilton</strong><p>121 4th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.779654, 36.160632]
-        },
-      'properties': {
-        'name': 'Renaissance',
-        'description': '<strong>Renaissance</strong><p>611 Commerce St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.779065, 36.164727]
-        },
-      'properties': {
-        'name': 'The Bobby',
-        'description': '<strong>The Bobby</strong><p>230 4th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.782852, 36.162989]
-        },
-      'properties': {
-        'name': 'Sheraton Grand',
-        'description': '<strong>Sheraton Grand</strong><p>623 Union St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.779939, 36.164843]
-        },
-      'properties': {
-        'name': 'Fairlane Hotel',
-        'description': '<strong>Fairlane Hotel</strong><p>401 Union St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.777787, 36.165269]
-        },
-      'properties': {
-        'name': '21 c Museum Hotel',
-        'description': '<strong>21 c Museum Hotel</strong><p>221 2nd Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.783187, 36.162159]
-        },
-      'properties': {
-        'name': 'Homewood Suites',
-        'description': '<strong>Homewood Suites</strong><p>706 Church St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.781106, 36.160459]
-        },
-      'properties': {
-        'name': 'Holston House',
-        'description': '<strong>Holston House</strong><p>118 7th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.783737, 36.163151]
-        },
-      'properties': {
-        'name': 'The Capitol Hotel',
-        'description': '<strong>The Capitol Hotel</strong><p>711 Union St<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.780567, 36.155501]
-        },
-      'properties': {
-        'name': 'The Westin Nashville',
-        'description': '<strong>The Westin Nashville</strong><p>807 Clark<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.781024, 36.157792]
-        },
-      'properties': {
-        'name': 'Cambria Hotel',
-        'description': '<strong>Cambria Hotel</strong><p>118 8th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.784247, 36.158771]
-        },
-      'properties': {
-        'name': 'Holiday Inn Express Nashville-Downtown',
-        'description': '<strong>Holiday Inn Express Nashville-Downtown</strong><p>920 Broadway<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.784736, 36.157301]
-        },
-      'properties': {
-        'name': 'Union Station Hotel',
-        'description': '<strong>Union Station Hotel</strong><p>1001 Broadway<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.773769, 36.157223]
-        },
-      'properties': {
-        'name': 'Hilton Garden Inn Nashville',
-        'description': '<strong>Hilton Garden Inn Nashville</strong><p>305 Korean Veterans Blvd<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.774736, 36.157762]
-        },
-      'properties': {
-        'name': 'Hampton Inn & Suites',
-        'description': '<strong>Hampton Inn & Suites</strong><p>310 4th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.774225, 36.158376]
-        },
-      'properties': {
-        'name': 'Hyatt Place Nashville Downtown',
-        'description': '<strong>Hyatt Place Nashville Downtown</strong><p>301 3rd Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.775403, 36.157271]
-        },
-      'properties': {
-        'name': 'Omni',
-        'description': '<strong>Omni</strong><p>250 5th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.781135, 36.156527]
-        },
-      'properties': {
-        'name': 'J W Marriott',
-        'description': '<strong>J W Marriott</strong><p>201 8th Ave S<br>Nashville TN</p>',
-        'color': hotelsColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.778967, 36.164237]
-        },
-      'properties': {
-        'name': 'Dream Hotel',
-        'description': '<strong>Dream Hotel</strong><p>210 4th Ave N<br>Nashville TN</p>',
-        'color': hotelsColor
+        'name': 'Hadley Park',
+        'description': '<strong>Hadley Park</strong><p>1037 28th Ave N<br>Nashville TN</p>',
+        'color': parksColor
         }
     } // end location point
   ] // end array
 };
 
-var residential = {
+var hosuni = {
   'type': 'FeatureCollection',
   'features': [
     // location point
@@ -1146,12 +712,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.789507, 36.152669]
+        'coordinates': [-86.801573, 36.142523]
         },
       'properties': {
-        'name': '1505 Demonbreun',
-        'description': '<strong>1505 Demonbreun</strong><br><p>1505 Demonbreun Street<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Vanderbilt University + Medical Center',
+        'description': '<strong>Vanderbilt University + Medical Center</strong><br><p>1211 Medical Center Dr<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1160,12 +726,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.798647, 36.154948]
+        'coordinates': [-86.809258, 36.153631]
         },
       'properties': {
-        'name': '1818 Church',
-        'description': '<strong>1818 Church</strong><br><p>1818 Church Street<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Tri-Star Centennial Medical Center',
+        'description': '<strong>Tri-Star Centennial Medical Center</strong><br><p>2300 Patterson St<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1174,12 +740,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.817709, 36.154927]
+        'coordinates': [-86.802455, 36.153856]
         },
       'properties': {
-        'name': '2700 Charlotte Ave',
-        'description': '<strong>2700 Charlotte Ave</strong><br><p>2700 Charlotte Ave<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Saint Thomas Midtown Hospital',
+        'description': '<strong>Saint Thomas Midtown Hospital</strong><br><p>2000 Church St<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1188,12 +754,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.783163, 36.168509]
+        'coordinates': [-86.827528, 36.167074]
         },
       'properties': {
-        'name': 'The 500 Fifth',
-        'description': '<strong>The 500 Fifth</strong><br><p>500 5th Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Tennessee State University',
+        'description': '<strong>Tennessee State University</strong><br><p>3500 John A Merritt Blvd<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1202,12 +768,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.780376, 36.162825]
+        'coordinates': [-86.803950, 36.167150]
         },
       'properties': {
-        'name': '505',
-        'description': '<strong>505</strong><br><p>505 Church Street<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Fisk University',
+        'description': '<strong>Fisk University</strong><br><p>1000 17th Ave N<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1216,12 +782,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.794941, 36.149129]
+        'coordinates': [-86.807735, 36.166502]
         },
       'properties': {
-        'name': 'Artisan on 18th',
-        'description': '<strong>Artisan on 18th</strong><br><p>819 18th Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Meharry Medical College',
+        'description': '<strong>Meharry Medical College</strong><br><p>1005 Dr DB Todd Jr Blvd<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1230,12 +796,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.792932, 36.153454]
+        'coordinates': [-86.794138, 36.132639]
         },
       'properties': {
-        'name': 'The Cadence',
-        'description': '<strong>The Cadence</strong><br><p>1600 McGavock Street<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Belmont University',
+        'description': '<strong>Belmont University</strong><br><p>1900 Belmont Blvd<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     }, // end location point
 
@@ -1244,446 +810,12 @@ var residential = {
       'type': 'Feature',
       'geometry': {
         'type': 'Point',
-        'coordinates': [-86.809984, 36.156607]
+        'coordinates': [-86.798910, 36.104374]
         },
       'properties': {
-        'name': 'Charlotte at Midtown',
-        'description': '<strong>Charlotte at Midtown</strong><br><p>2400 Charlotte Avenue<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.766786, 36.157449]
-        },
-      'properties': {
-        'name': 'City View',
-        'description': '<strong>City View</strong><br><p>210 Middleton Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.780866, 36.162532]
-        },
-      'properties': {
-        'name': 'Cumberland on Church Apartments',
-        'description': '<strong>Cumberland on Church Apartments</strong><br><p>555 Church Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.803574, 36.152578]
-        },
-      'properties': {
-        'name': 'The Dallas on Elliston',
-        'description': '<strong>The Dallas on Elliston</strong><br><p>2110 Elliston Place<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.815366, 36.147278]
-        },
-      'properties': {
-        'name': 'Duet',
-        'description': '<strong>Duet</strong><br><p>301 29th Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.805186, 36.153137]
-        },
-      'properties': {
-        'name': 'Edge Midtown',
-        'description': '<strong>Edge Midtown</strong><br><p>301 22nd Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.790612, 36.152552]
-        },
-      'properties': {
-        'name': 'Element Music Row',
-        'description': '<strong>Element Music Row</strong><br><p>1515 Demonbreun Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.789403, 36.161091]
-        },
-      'properties': {
-        'name': 'Eleven North',
-        'description': '<strong>Eleven North</strong><br><p>210 11th Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.805709, 36.150405]
-        },
-      'properties': {
-        'name': 'Elliston 23',
-        'description': '<strong>Elliston 23</strong><br><p>2300 Elliston Place<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.794991, 36.179404]
-        },
-      'properties': {
-        'name': 'Evergreen at Werthan',
-        'description': '<strong>Evergreen at Werthan</strong><br><p>1600 Rosa L Parks Blvd<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.791823, 36.179287]
-        },
-      'properties': {
-        'name': 'The Flats at Taylor Place',
-        'description': '<strong>The Flats at Taylor Place</strong><br><p>1515 5th Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.789621, 36.158739]
-        },
-      'properties': {
-        'name': 'The Gossett on Church',
-        'description': '<strong>The Gossett on Church</strong><br><p>1201 Church Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.801755, 36.133290]
-        },
-      'properties': {
-        'name': 'Hayes House Hillsboro Village',
-        'description': '<strong>Hayes House Hillsboro Village</strong><br><p>2101 Portland Avenue<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.797360, 36.162388]
-        },
-      'properties': {
-        'name': 'John Henry Hale',
-        'description': '<strong>John Henry Hale</strong><br><p>1433 Jo Johnston Avenue<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.795590, 36.149695]
-        },
-      'properties': {
-        'name': 'The Morris',
-        'description': '<strong>The Morris</strong><br><p>818 19th Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.793285, 36.141254]
-        },
-      'properties': {
-        'name': 'Note16',
-        'description': '<strong>Note16</strong><br><p>1520 Horton Avenue<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.787376, 36.151442]
-        },
-      'properties': {
-        'name': 'Novel Music Row',
-        'description': '<strong>Novel Music Row</strong><br><p>1221 Division Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.797474, 36.156975]
-        },
-      'properties': {
-        'name': 'Olympus Midtown',
-        'description': '<strong>Olympus Midtown</strong><br><p>1700 State Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.809131, 36.149107]
-        },
-      'properties': {
-        'name': 'ParkCentral',
-        'description': '<strong>ParkCentral</strong><br><p>220 25th Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.788268, 36.180243]
-        },
-      'properties': {
-        'name': 'Peyton Stakes',
-        'description': '<strong>Peyton Stakes</strong><br><p>1401 3rd Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.782159, 36.152926]
-        },
-      'properties': {
-        'name': 'Pine Street Flats',
-        'description': '<strong>Pine Street Flats</strong><br><p>1055 Pine Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.798355, 36.148897]
-        },
-      'properties': {
-        'name': 'Residences at Aertson Midtown',
-        'description': '<strong>Residences at Aertson Midtown</strong><br><p>905 20th Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.764819, 36.157170]
-        },
-      'properties': {
-        'name': 'River House',
-        'description': '<strong>River House</strong><br><p>4 Academy Place<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.793766, 36.152913]
-        },
-      'properties': {
-        'name': 'SkyHouse Nashville',
-        'description': '<strong>SkyHouse Nashville</strong><br><p>111 17th Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.774107, 36.159613]
-        },
-      'properties': {
-        'name': 'SoBro',
-        'description': '<strong>SoBro</strong><br><p>205 Demonbreun Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.778291, 36.165592]
-        },
-      'properties': {
-        'name': 'The Stahlman Building',
-        'description': '<strong>The Stahlman Building</strong><br><p>211 Union Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.766630, 36.156460]
-        },
-      'properties': {
-        'name': 'Terra House',
-        'description': '<strong>Terra House</strong><br><p>115 Middleton Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.798523, 36.147856]
-        },
-      'properties': {
-        'name': 'Twenty & Grand',
-        'description': '<strong>Twenty & Grand</strong><br><p>2000 Grand Avenue<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.783464, 36.153329]
-        },
-      'properties': {
-        'name': 'Velocity in the Gulch',
-        'description': '<strong>Velocity in the Gulch</strong><br><p>320 11th Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.800456, 36.138183]
-        },
-      'properties': {
-        'name': 'Village 21',
-        'description': '<strong>Village 21</strong><br><p>1620 21st Avenue South<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.788882, 36.174671]
-        },
-      'properties': {
-        'name': 'Vista Germantown',
-        'description': '<strong>Vista Germantown</strong><br><p>515 Madison Street<br>Nashville TN</p>',
-        'color': residentialColor
-        }
-    }, // end location point
-
-    // location point
-    {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Point',
-        'coordinates': [-86.816508, 36.146234]
-        },
-      'properties': {
-        'name': 'West End Village',
-        'description': '<strong>West End Village</strong><br><p>221 31st Avenue North<br>Nashville TN</p>',
-        'color': residentialColor
+        'name': 'Lipscomb University',
+        'description': '<strong>Lipscomb University</strong><br><p>1 University Park Dr<br>Nashville TN</p>',
+        'color': hosuniColor
         }
     } // end location point
   ] // end array
@@ -4661,14 +3793,14 @@ map.on('load', function() {
       'data': grocery
   });
 
-  map.addSource('hotels', {
+  map.addSource('parks', {
       'type': 'geojson',
-      'data': hotels
+      'data': parks
   });
 
-  map.addSource('residential', {
+  map.addSource('hosuni', {
       'type': 'geojson',
-      'data': residential
+      'data': hosuni
   });
 
   map.addSource('foodbev', {
@@ -4704,9 +3836,9 @@ map.on('load', function() {
   });
 
   map.addLayer({
-      'id': 'hotels',
+      'id': 'parks',
       'type': 'circle',
-      'source': 'hotels',
+      'source': 'parks',
       'layout': {
           'visibility': 'visible'
       },
@@ -4717,9 +3849,9 @@ map.on('load', function() {
   });
 
   map.addLayer({
-      'id': 'residential',
+      'id': 'hosuni',
       'type': 'circle',
-      'source': 'residential',
+      'source': 'hosuni',
       'layout': {
           'visibility': 'visible'
       },
@@ -4746,7 +3878,7 @@ map.on('load', function() {
 
 
 // the magic
-var accLayerIds = ['entertainment','grocery','hotels','residential', 'food-beverage'];
+var accLayerIds = ['entertainment','grocery','parks','hosuni', 'food-beverage'];
 
 var layers = document.getElementById('mapbox-menu');
 
@@ -4791,15 +3923,15 @@ for (var i = 0; i < accLayerIds.length; i++) {
       var clickedLayer = this.textContent;
       var entLayer = $('#entertainment-acc-btn').text();
       var groLayer = $('#grocery-acc-btn').text();
-      var hotLayer = $('#hotels-acc-btn').text();
-      var resLayer = $('#residential-acc-btn').text();
+      var parksLayer = $('#parks-acc-btn').text();
+      var resLayer = $('#hosuni-acc-btn').text();
       var foodBevLayer = $('#food-beverage-acc-btn').text();
       e.preventDefault();
       e.stopPropagation();
 
       map.setLayoutProperty(entLayer, 'visibility', 'none');
       map.setLayoutProperty(groLayer, 'visibility', 'none');
-      map.setLayoutProperty(hotLayer, 'visibility', 'none');
+      map.setLayoutProperty(parksLayer, 'visibility', 'none');
       map.setLayoutProperty(resLayer, 'visibility', 'none');
       map.setLayoutProperty(foodBevLayer, 'visibility', 'none');
 
@@ -4832,9 +3964,9 @@ document.getElementById('entertainment-cat-ul').innerHTML =
 "<li>Tootsies Orchid Lounge</li><li>Rippy's Bar & Grill</li><li>Robert's Western World</li><li>The Stage on Broadway</li><li>Honky Tonk Central</li><li>Wildhorse Saloon</li><li>B.B. King's Blues Club</li><li>EXIT/IN</li><li>Ryman Auditorium</li><li>Ascend Amphitheater</li><li>TPAC</li><li>Schermerhorn Symphony</li><li>Mercy Lounge</li><li>The Station Inn</li><li>12th & Porter</li><li>Tin Roof</li><li>The End</li><li>Rudy's Jazz Room</li><li>Sambuca</li><li>Commodore Grille</li><li>Losers Bar & Grill</li><li>Analog</li><li>The Row</li><li>Marathon Music Works</li><li>The Local</li><li>Springwater</li><li>City Winery</li><li>Play Dance Bar</li><li>WKNO Hang Suite</li><li>Tribe</li><li>The Back Room</li><li>16-Bit Bar + Arcade and Pins Mechanical Co.</li>";
 document.getElementById('grocery-cat-ul').innerHTML =
 "<li>Publix</li><li>Whole Foods</li><li>Turnip Truck</li><li>Piggly Wiggly</li>";
-document.getElementById('hotels-cat-ul').innerHTML =
+document.getElementById('parks-cat-ul').innerHTML =
 "<li>Aloft Nashville</li><li>Residence Inn by Marriott</li><li>Spring Hill Suites</li><li>Hutton Hotel</li><li>Hayes Street Hotel</li><li>Marriott Courtyard</li><li>Hampton Inn</li><li>Loews Vanderbilt</li><li>Kimpton Aertson</li><li>Embassy Suites</li><li>Hilton Garden</li><li>Homes2Suites by Hilton</li><li>Best Western Music Row</li><li>Comfort Inn Downtown Nashville-Vanderbilt</li><li>Thompson Hotel</li><li>404 Hotel</li><li>Stay Alfred at The James</li><li>Fairfield Inn & Suites</li><li>Noelle</li><li>Courtyard by Marriott</li><li>Hotel Indigo</li><li>Hermitage Hotel</li><li>Doubletree</li><li>Hilton</li><li>Renaissance</li><li>The Bobby</li><li>Sheraton Grand</li><li>Fairlane Hotel</li><li>21 c Museum Hotel</li><li>Homewood Suites</li><li>Holston House</li><li>The Capitol Hotel</li><li>The Westin Nashville</li><li>Cambria Hotel</li><li>Holiday Inn Express Nashville-Downtown</li><li>Union Station Hotel</li><li>Hilton Garden Inn Nashville</li><li>Hampton Inn & Suites</li><li>Hyatt Place Nashville Downtown</li><li>Omni</li><li>J W Marriott</li><li>Dream Hotel</li>";
-document.getElementById('residential-cat-ul').innerHTML =
+document.getElementById('hosuni-cat-ul').innerHTML =
 "<li>1505 Demonbreun</li><li>1818 Church</li><li>2700 Charlotte Ave</li><li>The 500 Fifth</li><li>505</li><li>Artisan on 18th</li><li>The Cadence</li><li>Charlotte at Midtown</li><li>City View</li><li>Cumberland on Church Apartments</li><li>The Dallas on Elliston</li><li>Duet</li><li>Edge Midtown</li><li>Element Music Row</li><li>Eleven North</li><li>Elliston 23</li><li>Evergreen at Werthan</li><li>The Flats at Taylor Place</li><li>The Gossett on Church</li><li>Hayes House Hillsboro Village</li><li>John Henry Hale</li><li>The Morris</li><li>Note16</li><li>Novel Music Row</li><li>Olympus Midtown</li><li>ParkCentral</li><li>Peyton Stakes</li><li>Pine Street Flats</li><li>Residences at Aertson Midtown</li><li>River House</li><li>SkyHouse Nashville</li><li>SoBro</li><li>The Stahlman Building</li><li>Terra House</li><li>Twenty & Grand</li><li>Velocity in the Gulch</li><li>Village 21</li><li>Vista Germantown</li><li>West End Village</li>";
 document.getElementById('food-beverage-cat-ul').innerHTML =
 "<li>Golden Coast</li><li>Goten Japanese</li><li>Inchin’s Bamboo Garden</li><li>Mane & Rye Dinerant</li><li>Las Palmas</li><li>Saltine</li><li>Amerigo</li><li>Five Guys</li><li>Jason’s Deli</li><li>PizzaRev Taproom</li><li>Ruth’s Chris Steak House</li><li>Mason's</li><li>Panera Bread</li><li>Starbucks</li><li>Chipotle</li><li>Mellow Mushroom</li><li>Nada</li><li>Caviar & Bananas</li><li>Henley</li><li>Giovanni Ristorante</li><li>Union Common</li><li>Two Boots Pizza</li><li>The Stillery</li><li>Kung Fu Saloon</li><li>Rebar</li><li>Winners Bar & Grill</li><li>Losers Bar & Grill</li><li>The Slider House</li><li>Hopsmith Tavern</li><li>Donatos Pizza</li><li>Urban Cookhouse</li><li>Tavern</li><li>The Row</li><li>Valentino’s Ristorante</li><li>Midtown Cafe</li><li>Cook Out</li><li>Hattie B’s Hot Chicken</li><li>Gigi’s Cupcakes</li><li>Broadway Brewhouse</li><li>Chuy’s</li><li>The Red Door Saloon</li><li>Five Odd Fellows</li><li>The Patterson House</li><li>The Catbird Seat</li><li>Grabbagreen</li><li>Capriotti’s Sandwich Shop</li><li>DeSano Pizza Bakery</li><li>TailGate Brewery</li><li>Live Oak</li><li>Just Love Coffee & Cafe</li><li>Sushiyobi</li><li>The Old Line</li><li>Little Chicago Pizzeria & Grill</li><li>DawgHouse Saloon</li><li>Two Bits</li><li>Tin Roof</li><li>Chick-fil-A</li><li>HiFi Clyde’s</li><li>Canvas Lounge</li><li>WKND Hang Suite</li><li>Play Dance Bar</li><li>Jack Cawthon's Bar-B-Que</li><li>Suzy Wong's House of Yum</li><li>Del Frisco's Grille</li><li>Pemrose</li><li>Potbelly Sandwich Shop</li><li>Juice Bar</li><li>Milk & Honey</li><li>Taziki's Mediterranean Café</li><li>Bar Louie</li><li>The Pub</li><li>Burger Republic</li><li>L.A. Jackson</li><li>Emmy Squared</li><li>Marsh House</li><li>Killebrew</li><li>Sunda</li><li>Hops & Crafts</li><li>Little Octopus</li><li>The 404 Kitchen</li><li>Sambuca</li><li>City Fire</li><li>Bar Otaku</li><li>Barista Parlor Golden Sound</li><li>The Back Room</li><li>Colts Chocolates Factory</li><li>Biscuit Love</li><li>Peg Leg Porker BBQ</li><li>Arnold's Country Kitchen</li><li>Night Train Pizza</li><li>Jackalope Brewing Co</li><li>Rudy's Jazz Room</li><li>ZolliKoffee</li><li>Party Fowl</li><li>The Chef And I on Ninth</li><li>Whiskey Kitchen</li><li>Kayne Prime Steakhouse</li><li>Moto</li><li>Virago</li><li>Saint Anejo</li><li>Adele's</li><li>Chauhan Ale & Masala House</li><li>The Mockingbird</li><li>Flying Saucer Draught Emporium</li><li>Cinco De Mayo</li><li>M. Restaurant & Bar</li><li>Fat Kat Slim's</li><li>Tennessee Brew Works</li><li>City Winery</li><li>Hot Diggity Dogs</li><li>Mortons Steakhouse</li><li>Oscars Taco Shop</li><li>Capitol Grille</li><li>Tazza</li><li>D'Andrews Bakery and Cafe</li><li>Puckett's</li><li>Jimmy Johns</li><li>Woolworth on Fifth</li><li>Frothy Monkey</li><li>Ellington's Midway Bar & Grill</li><li>Jeff Ruby's Steakhouse</li><li>417 Union</li><li>Wild Eggs</li><li>The Arcade Food Court</li><li>Subway</li><li>Viiza</li><li>Skulls Rainbow Room</li><li>Sea Salt</li><li>Gray and Dudley</li><li>Deacon's New South</li><li>Dunn Brothers Coffee</li><li>Chile Burrito</li><li>Café Le Crumbs</li><li>The Well Coffeehouse</li><li>Demo's</li><li>Another Broken Egg Café</li><li>Café Lula at The Ryman</li><li>The Old Spaghetti Factory</li><li>The Melting Pot</li><li>Cerveza Jack's</li><li>The Stillery</li><li>Acme Feed & Seed</li><li>Rock Bottom</li><li>Merchant's</li><li>Jack's Bar-B-Que</li><li>Pancho & Lefty's Cantina</li><li>The Palm</li><li>Trattori II Mulino</li><li>The Southern Steak & Oyster</li><li>The Diner</li><li>Etch</li><li>The Farm House</li><li>Bakersfield</li><li>City Tap House</li><li>The Diner</li><li>Husk</li><li>Creama</li><li>Hermitage Café</li><li>Pinewood Social</li><li>Little Mosko's</li><li>Kitchen Notes</li><li>Barlines</li><li>400 Degrees</li><li>Martin's BBQ Joint</li><li>Bar Sovereign</li><li>3rd & Lindsley</li><li>Listening Room Café</li><li>Dandgure's Classic Southern Co</li><li>Bob's Steak & Chop House</li><li>Oak Steakhouse</li><li>Thai Esane</li><li>Tansuo</li><li>Bourbon Steak by Michael Mina</li><li>Stompin Grounds</li><li>Eastern Peak</li><li>Tribe</li><li>Superica</li><li>Fable Lounge</li><li>Bella Napoli</li><li>Barcelona</li><li>Taco Mamacita</li><li>Old Glory</li><li>SATCO</li><li>Ben and Jerry’s</li><li>The Ainsworth</li><li>Krispy Kreme</li><li>Sitar</li><li>Samurai Sushi</li><li>Café Coco</li><li>Jimmy Kelly’s</li><li>Michaelangelo’s</li><li>Fleming’s</li><li>P.F. Chang's</li><li>Fainting Goat Cafe</li><li>Central BBQ</li><li>Greenery Co</li><li>Helen's Hot Chicken</li><li>Martin's Bar-B-Que Joint</li><li>The Eastern Peak</li><li>Ladybird Taco</li><li>Crab Fever</li><li>Ludlow's Gumbo Bar & Steak</li>";
