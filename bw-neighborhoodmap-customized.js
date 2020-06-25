@@ -26,8 +26,8 @@ var broadwest = {
 
   //define colors
   var entertainmentColor = '#5A829B';
-  var groceryColor = '#2C9971';
-  var parksColor = '#F2B761';
+  var groceryColor = '#F2B761';
+  var parksColor = '#2C9971';
   var hosuniColor = '#99682C';
   var foodBevColor = '#87362B';
 
@@ -3862,7 +3862,7 @@ map.on('load', function() {
   });
 
   map.addLayer({
-      'id': 'food-beverage',
+      'id': 'restaurants',
       'type': 'circle',
       'source': 'foodbev',
       'layout': {
@@ -3878,7 +3878,7 @@ map.on('load', function() {
 
 
 // the magic
-var accLayerIds = ['entertainment','grocery','parks','hosuni', 'food-beverage'];
+var accLayerIds = ['entertainment','grocery','parks','hosuni', 'restaurants'];
 
 var layers = document.getElementById('mapbox-menu');
 
@@ -3925,7 +3925,7 @@ for (var i = 0; i < accLayerIds.length; i++) {
       var groLayer = $('#grocery-acc-btn').text();
       var parksLayer = $('#parks-acc-btn').text();
       var resLayer = $('#hosuni-acc-btn').text();
-      var foodBevLayer = $('#food-beverage-acc-btn').text();
+      var foodBevLayer = $('#restaurants-acc-btn').text();
       e.preventDefault();
       e.stopPropagation();
 
@@ -3961,19 +3961,23 @@ for (var i = 0; i < accLayerIds.length; i++) {
 
 // jerry-rigging list population
 document.getElementById('entertainment-cat-ul').innerHTML =
-"<li>Tootsies Orchid Lounge</li><li>Rippy's Bar & Grill</li><li>Robert's Western World</li><li>The Stage on Broadway</li><li>Honky Tonk Central</li><li>Wildhorse Saloon</li><li>B.B. King's Blues Club</li><li>EXIT/IN</li><li>Ryman Auditorium</li><li>Ascend Amphitheater</li><li>TPAC</li><li>Schermerhorn Symphony</li><li>Mercy Lounge</li><li>The Station Inn</li><li>12th & Porter</li><li>Tin Roof</li><li>The End</li><li>Rudy's Jazz Room</li><li>Sambuca</li><li>Commodore Grille</li><li>Losers Bar & Grill</li><li>Analog</li><li>The Row</li><li>Marathon Music Works</li><li>The Local</li><li>Springwater</li><li>City Winery</li><li>Play Dance Bar</li><li>WKNO Hang Suite</li><li>Tribe</li><li>The Back Room</li><li>16-Bit Bar + Arcade and Pins Mechanical Co.</li>";
+"<li>Tootsies Orchid Lounge</li><li>Rippy's Bar & Grill</li><li>Robert's Western World</li><li>The Stage on Broadway</li><li>Honky Tonk Central</li><li>Wildhorse Saloon</li><li>B.B. King's Blues Club</li><li>EXIT/IN</li><li>Ryman Auditorium</li><li>Ascend Amphitheater</li><li>TPAC</li><li>Schermerhorn Symphony</li><li>Mercy Lounge</li><li>The Station Inn</li><li>12th & Porter</li><li>Tin Roof</li><li>The End</li><li>Rudy's Jazz Room</li><li>Sambuca</li><li>Commodore Grille</li><li>Losers Bar & Grill</li><li>Analog</li><li>The Row</li><li>Marathon Music Works</li><li>The Local</li><li>Springwater</li><li>City Winery</li><li>Play Dance Bar</li><li>WKNO Hang Suite</li><li>Tribe</li><li>The Back Room</li><li>16-Bit Bar + Arcade and Pins Mechanical Co.</li><li>Nissan Stadium</li><li>Bridgestone Arena</li><li>Nashville Soccer Club Stadium</li><li>First Tennessee Park</li><li>Top Golf</li>";
 document.getElementById('grocery-cat-ul').innerHTML =
 "<li>Publix</li><li>Whole Foods</li><li>Turnip Truck</li><li>Piggly Wiggly</li>";
 document.getElementById('parks-cat-ul').innerHTML =
-"<li>Aloft Nashville</li><li>Residence Inn by Marriott</li><li>Spring Hill Suites</li><li>Hutton Hotel</li><li>Hayes Street Hotel</li><li>Marriott Courtyard</li><li>Hampton Inn</li><li>Loews Vanderbilt</li><li>Kimpton Aertson</li><li>Embassy Suites</li><li>Hilton Garden</li><li>Homes2Suites by Hilton</li><li>Best Western Music Row</li><li>Comfort Inn Downtown Nashville-Vanderbilt</li><li>Thompson Hotel</li><li>404 Hotel</li><li>Stay Alfred at The James</li><li>Fairfield Inn & Suites</li><li>Noelle</li><li>Courtyard by Marriott</li><li>Hotel Indigo</li><li>Hermitage Hotel</li><li>Doubletree</li><li>Hilton</li><li>Renaissance</li><li>The Bobby</li><li>Sheraton Grand</li><li>Fairlane Hotel</li><li>21 c Museum Hotel</li><li>Homewood Suites</li><li>Holston House</li><li>The Capitol Hotel</li><li>The Westin Nashville</li><li>Cambria Hotel</li><li>Holiday Inn Express Nashville-Downtown</li><li>Union Station Hotel</li><li>Hilton Garden Inn Nashville</li><li>Hampton Inn & Suites</li><li>Hyatt Place Nashville Downtown</li><li>Omni</li><li>J W Marriott</li><li>Dream Hotel</li>";
+"<li>Centennial Park</li><li>Centennial Dog Park</li><li>Bicentennial Park</li><li>Reservoir Park</li><li>Nashville Public Square Park</li><li>Riverfront Park</li><li>Hadley Park</li>";
 document.getElementById('hosuni-cat-ul').innerHTML =
-"<li>1505 Demonbreun</li><li>1818 Church</li><li>2700 Charlotte Ave</li><li>The 500 Fifth</li><li>505</li><li>Artisan on 18th</li><li>The Cadence</li><li>Charlotte at Midtown</li><li>City View</li><li>Cumberland on Church Apartments</li><li>The Dallas on Elliston</li><li>Duet</li><li>Edge Midtown</li><li>Element Music Row</li><li>Eleven North</li><li>Elliston 23</li><li>Evergreen at Werthan</li><li>The Flats at Taylor Place</li><li>The Gossett on Church</li><li>Hayes House Hillsboro Village</li><li>John Henry Hale</li><li>The Morris</li><li>Note16</li><li>Novel Music Row</li><li>Olympus Midtown</li><li>ParkCentral</li><li>Peyton Stakes</li><li>Pine Street Flats</li><li>Residences at Aertson Midtown</li><li>River House</li><li>SkyHouse Nashville</li><li>SoBro</li><li>The Stahlman Building</li><li>Terra House</li><li>Twenty & Grand</li><li>Velocity in the Gulch</li><li>Village 21</li><li>Vista Germantown</li><li>West End Village</li>";
-document.getElementById('food-beverage-cat-ul').innerHTML =
+"<li>Vanderbilt University + Medical Center</li><li>Tri-Star Centennial Medical Center</li><li>Saint Thomas Midtown Hospital</li><li>Tennessee State University</li><li>Fisk University</li><li>Meharry Medical College</li><li>Belmont University</li><li>Lipscomb University</li>";
+document.getElementById('restaurants-cat-ul').innerHTML =
 "<li>Golden Coast</li><li>Goten Japanese</li><li>Inchin’s Bamboo Garden</li><li>Mane & Rye Dinerant</li><li>Las Palmas</li><li>Saltine</li><li>Amerigo</li><li>Five Guys</li><li>Jason’s Deli</li><li>PizzaRev Taproom</li><li>Ruth’s Chris Steak House</li><li>Mason's</li><li>Panera Bread</li><li>Starbucks</li><li>Chipotle</li><li>Mellow Mushroom</li><li>Nada</li><li>Caviar & Bananas</li><li>Henley</li><li>Giovanni Ristorante</li><li>Union Common</li><li>Two Boots Pizza</li><li>The Stillery</li><li>Kung Fu Saloon</li><li>Rebar</li><li>Winners Bar & Grill</li><li>Losers Bar & Grill</li><li>The Slider House</li><li>Hopsmith Tavern</li><li>Donatos Pizza</li><li>Urban Cookhouse</li><li>Tavern</li><li>The Row</li><li>Valentino’s Ristorante</li><li>Midtown Cafe</li><li>Cook Out</li><li>Hattie B’s Hot Chicken</li><li>Gigi’s Cupcakes</li><li>Broadway Brewhouse</li><li>Chuy’s</li><li>The Red Door Saloon</li><li>Five Odd Fellows</li><li>The Patterson House</li><li>The Catbird Seat</li><li>Grabbagreen</li><li>Capriotti’s Sandwich Shop</li><li>DeSano Pizza Bakery</li><li>TailGate Brewery</li><li>Live Oak</li><li>Just Love Coffee & Cafe</li><li>Sushiyobi</li><li>The Old Line</li><li>Little Chicago Pizzeria & Grill</li><li>DawgHouse Saloon</li><li>Two Bits</li><li>Tin Roof</li><li>Chick-fil-A</li><li>HiFi Clyde’s</li><li>Canvas Lounge</li><li>WKND Hang Suite</li><li>Play Dance Bar</li><li>Jack Cawthon's Bar-B-Que</li><li>Suzy Wong's House of Yum</li><li>Del Frisco's Grille</li><li>Pemrose</li><li>Potbelly Sandwich Shop</li><li>Juice Bar</li><li>Milk & Honey</li><li>Taziki's Mediterranean Café</li><li>Bar Louie</li><li>The Pub</li><li>Burger Republic</li><li>L.A. Jackson</li><li>Emmy Squared</li><li>Marsh House</li><li>Killebrew</li><li>Sunda</li><li>Hops & Crafts</li><li>Little Octopus</li><li>The 404 Kitchen</li><li>Sambuca</li><li>City Fire</li><li>Bar Otaku</li><li>Barista Parlor Golden Sound</li><li>The Back Room</li><li>Colts Chocolates Factory</li><li>Biscuit Love</li><li>Peg Leg Porker BBQ</li><li>Arnold's Country Kitchen</li><li>Night Train Pizza</li><li>Jackalope Brewing Co</li><li>Rudy's Jazz Room</li><li>ZolliKoffee</li><li>Party Fowl</li><li>The Chef And I on Ninth</li><li>Whiskey Kitchen</li><li>Kayne Prime Steakhouse</li><li>Moto</li><li>Virago</li><li>Saint Anejo</li><li>Adele's</li><li>Chauhan Ale & Masala House</li><li>The Mockingbird</li><li>Flying Saucer Draught Emporium</li><li>Cinco De Mayo</li><li>M. Restaurant & Bar</li><li>Fat Kat Slim's</li><li>Tennessee Brew Works</li><li>City Winery</li><li>Hot Diggity Dogs</li><li>Mortons Steakhouse</li><li>Oscars Taco Shop</li><li>Capitol Grille</li><li>Tazza</li><li>D'Andrews Bakery and Cafe</li><li>Puckett's</li><li>Jimmy Johns</li><li>Woolworth on Fifth</li><li>Frothy Monkey</li><li>Ellington's Midway Bar & Grill</li><li>Jeff Ruby's Steakhouse</li><li>417 Union</li><li>Wild Eggs</li><li>The Arcade Food Court</li><li>Subway</li><li>Viiza</li><li>Skulls Rainbow Room</li><li>Sea Salt</li><li>Gray and Dudley</li><li>Deacon's New South</li><li>Dunn Brothers Coffee</li><li>Chile Burrito</li><li>Café Le Crumbs</li><li>The Well Coffeehouse</li><li>Demo's</li><li>Another Broken Egg Café</li><li>Café Lula at The Ryman</li><li>The Old Spaghetti Factory</li><li>The Melting Pot</li><li>Cerveza Jack's</li><li>The Stillery</li><li>Acme Feed & Seed</li><li>Rock Bottom</li><li>Merchant's</li><li>Jack's Bar-B-Que</li><li>Pancho & Lefty's Cantina</li><li>The Palm</li><li>Trattori II Mulino</li><li>The Southern Steak & Oyster</li><li>The Diner</li><li>Etch</li><li>The Farm House</li><li>Bakersfield</li><li>City Tap House</li><li>The Diner</li><li>Husk</li><li>Creama</li><li>Hermitage Café</li><li>Pinewood Social</li><li>Little Mosko's</li><li>Kitchen Notes</li><li>Barlines</li><li>400 Degrees</li><li>Martin's BBQ Joint</li><li>Bar Sovereign</li><li>3rd & Lindsley</li><li>Listening Room Café</li><li>Dandgure's Classic Southern Co</li><li>Bob's Steak & Chop House</li><li>Oak Steakhouse</li><li>Thai Esane</li><li>Tansuo</li><li>Bourbon Steak by Michael Mina</li><li>Stompin Grounds</li><li>Eastern Peak</li><li>Tribe</li><li>Superica</li><li>Fable Lounge</li><li>Bella Napoli</li><li>Barcelona</li><li>Taco Mamacita</li><li>Old Glory</li><li>SATCO</li><li>Ben and Jerry’s</li><li>The Ainsworth</li><li>Krispy Kreme</li><li>Sitar</li><li>Samurai Sushi</li><li>Café Coco</li><li>Jimmy Kelly’s</li><li>Michaelangelo’s</li><li>Fleming’s</li><li>P.F. Chang's</li><li>Fainting Goat Cafe</li><li>Central BBQ</li><li>Greenery Co</li><li>Helen's Hot Chicken</li><li>Martin's Bar-B-Que Joint</li><li>The Eastern Peak</li><li>Ladybird Taco</li><li>Crab Fever</li><li>Ludlow's Gumbo Bar & Steak</li>";
 
 //target food & beverage button to change textContent
-$( 'div#food-beverage-wrap' )
-  .append( '<div class="acc-cat-replace">Food + Beverage</div>' );
+$( 'div#entertainment-wrap' )
+  .append( '<div class="acc-cat-replace">Sports + Entertainment</div>' );
+$( 'div#parks-wrap' )
+  .append( '<div class="acc-cat-replace">Parks + Green Spaces</div>' );
+$( 'div#hosuni-wrap' )
+  .append( '<div class="acc-cat-replace">Hospitals + Universities</div>' );
 // toggle behavior for view all and acc buttons
 $(".acc-wrapper a").click(function(){
   $('.acc-wrapper a.checked').not(this).removeClass('checked');
