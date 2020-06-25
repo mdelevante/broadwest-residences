@@ -527,6 +527,20 @@ var grocery = {
         'description': '<strong>Turnip Truck</strong><p>321 12th Ave S<br>Nashville TN</p>',
         'color': groceryColor
         }
+    }, // end location point
+    
+    // location point
+    {
+      'type': 'Feature',
+      'geometry': {
+        'type': 'Point',
+        'coordinates': [-86.813579, 36.144615]
+        },
+      'properties': {
+        'name': 'Piggly Wiggly',
+        'description': '<strong>Piggly Wiggly</strong><p>2900 West End Ave<br>Nashville, TN 37203</p>',
+        'color': groceryColor
+        }
     } // end location point
   ] //end array
 };
